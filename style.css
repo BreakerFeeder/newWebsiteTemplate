@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none!important;
+    /* scroll-behavior: smooth; */
+}
+
+/* Main Section  */
+
+#Main {
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/73-D4adSPYY/1600x900");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 1px #333;
+    color: #fff;
+}
+
+/* Navigation  */
+
+#Nav {
+    height: 10vh;
+    font-size: 2rem;
+    display: flex;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#Nav-logo {
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    /* text-decoration: none; */
+}
+
+#Nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Nav ul li {
+    padding-left: 2rem;
+}
+
+#Nav ul li a {
+    /* text-decoration: none; */
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* End of Main Section  */
+
+/* Header  */
+
+#Header {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Header h1 {
+    font-size: 10rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#Header h3 {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#Header .btn-success {
+    margin-top: 2rem;
+}
+
+#Header .btn-success a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* End of the Header  */
+
+/* End of Main Section  */
+
+section {
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+}
+
+section:nth-child(odd) {
+    background-color: #333;
+}
+
+h2 {
+    font-size: 6rem!important;
+}
+
+/* About Section  */
+
+#About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#About .about-container {
+    width: 1200px;
+    display: flex;
+    margin-top: 6rem;
+}
+
+#About .about-img {
+    min-width: 500px;
+    min-height: 320px;
+    background-image: url("https://i.pinimg.com/originals/19/fd/07/19fd077c7b2023715e28f130dfdcb9d2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#About .about-description {
+    padding-left: 2rem;
+}
+
+/* End of About Section  */
+ /* Service Section  */
+#Service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+#Service h2 {
+    color: #fff;
+}
+#Service .service-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: space-around;
+}
+#Service .service{
+    background-color: #fff;
+    max-width: 300px;
+    box-shadow: 0   0   15px  5px ;
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 18px;
+}
+#Service .service:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.5 ease;
+    background-color: #555;
+    color: #fff;
+}
+ /* End of Service Section  */
+
+ /* Contact Section  */
+#Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Contact .contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+#Contact .contact{
+    min-width: 300px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+#Contact i{
+    margin-bottom: 1rem;
+}
+#Contact i:hover{
+    color: blue;
+}
+
+ /* End of Contact Section  */
+
+ /* Footer  */
+#Footer{
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /* End of Footer  */
+
+ @media (max-width:900px){
+    #Header h1{
+        font-size: 6rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    #Nav{
+        font-size: 1.5rem;
+    }
+    #About .about-container{
+        flex-direction: column;
+    }
+    #About .about-description{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+ @media (max-width:400px){
+    h2{
+        font-size: 2.5rem;
+    }
+    #Nav{
+        height: 15vh;
+        width: 200px;
+        flex-direction: column;
+    }
+    #Nav ul{
+        justify-content: space-between;
+        align-items: center;
+    }
+    #Header h1{
+        font-size: 4rem;
+    }
+    #About .about-img{
+        min-width: 350px ;
+    }
+}
